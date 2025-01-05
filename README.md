@@ -16,7 +16,12 @@ X                  X▒▒▒▒▒▒▒X                 X
   X                  X▒▒▒X                 X  
    XX                 XXX                XX   
      XXX           XXX  XXX           XXX     
-        XXXXXXXXXXX        XXXXXXXXXXX        
+        XXXXXXXXXXX        XXXXXXXXXXX
+
+SELECT users.email 
+FROM users 
+INNER JOIN profile 
+ON users.id = profile.auid      
 ```
 + LEFT OUTER JOIN
 Retrieves all records from the left table and the corresponding matched records from the right table.
