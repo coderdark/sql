@@ -9,7 +9,7 @@ SELECT users.email FROM user
 SELECT users.email FROM user WHERE user.id = 12345
 
 --Users that have ids in profile
-SELECT users.email FROM users WHERE users.id IN (SELECT profile.auid FROM profile)
+SELECT users.email FROM users WHERE users.id IN (SELECT profile.id FROM profile)
 ```
 
 ## JOINS
@@ -55,7 +55,7 @@ X▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒X▒▒▒▒▒▒▒X  
 SELECT users.email 
 FROM users 
 LEFT OUTER JOIN profile 
-ON users.id = profile.auid       
+ON users.id = profile.id       
 ```
 + RIGHT OUTER JOIN
 Retrieves all records from the right table and the corresponding matched records from the left table.
@@ -77,7 +77,7 @@ X                  X▒▒▒▒▒▒▒X▒▒▒▒▒▒▒▒▒▒▒▒�
 SELECT users.email 
 FROM users 
 RIGHT OUTER JOIN profile 
-ON users.id = profile.auid        
+ON users.id = profile.id        
 ```
 + FULL OUTER JOIN
 Retrieves all records that have a match in either the left or right table.
@@ -99,5 +99,5 @@ X▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒X▒▒▒▒▒▒▒X�
 SELECT users.email 
 FROM users 
 FULL OUTER JOIN profile 
-ON users.id = profile.auid       
+ON users.id = profile.id       
 ```
