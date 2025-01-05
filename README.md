@@ -37,7 +37,7 @@ ON users.id = profile.auid
 ```
 + LEFT OUTER JOIN
 Retrieves all records from the left table and the corresponding matched records from the right table.
-```
+```SQL
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX▒▒▒▒▒▒▒▒▒▒▒XXX  XXX           XXX     
    XX▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒XXX                XX   
@@ -59,7 +59,7 @@ ON users.id = profile.auid
 ```
 + RIGHT OUTER JOIN
 Retrieves all records from the right table and the corresponding matched records from the left table.
-```
+```SQL
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX           XXX  XXX▒▒▒▒▒▒▒▒▒▒▒XXX     
    XX                 XXX▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒XX   
@@ -81,7 +81,7 @@ ON users.id = profile.auid
 ```
 + FULL OUTER JOIN
 Retrieves all records that have a match in either the left or right table.
-```
+```SQL
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX▒▒▒▒▒▒▒▒▒▒▒XXX  XXX▒▒▒▒▒▒▒▒▒▒▒XXX     
    XX▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒XXX▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒XX   
