@@ -2,6 +2,7 @@
 
 ## JOINS
 + INNER JOIN
+Retrieves records that contain matching values in both tables.
 ```
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX           XXX  XXX           XXX     
@@ -17,7 +18,8 @@ X                  X▒▒▒▒▒▒▒X                 X
      XXX           XXX  XXX           XXX     
         XXXXXXXXXXX        XXXXXXXXXXX        
 ```
-+ LEFT JOIN
++ LEFT OUTER JOIN
+Retrieves all records from the left table and the corresponding matched records from the right table.
 ```
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX▒▒▒▒▒▒▒▒▒▒▒XXX  XXX           XXX     
@@ -33,7 +35,8 @@ X▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒X▒▒▒▒▒▒▒X  
      XXX▒▒▒▒▒▒▒▒▒▒▒XXX  XXX           XXX     
         XXXXXXXXXXX        XXXXXXXXXXX        
 ```
-+ RIGHT JOIN
++ RIGHT OUTER JOIN
+Retrieves all records from the right table and the corresponding matched records from the left table.
 ```
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX           XXX  XXX▒▒▒▒▒▒▒▒▒▒▒XXX     
@@ -49,7 +52,8 @@ X                  X▒▒▒▒▒▒▒X▒▒▒▒▒▒▒▒▒▒▒▒�
      XXX           XXX  XXX▒▒▒▒▒▒▒▒▒▒▒XXX     
         XXXXXXXXXXX        XXXXXXXXXXX        
 ```
-+ FULL JOIN
++ FULL OUTER JOIN
+Retrieves all records that have a match in either the left or right table.
 ```
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX▒▒▒▒▒▒▒▒▒▒▒XXX  XXX▒▒▒▒▒▒▒▒▒▒▒XXX     
