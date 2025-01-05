@@ -1,5 +1,17 @@
 # SQL
 
+## SELECT
+```SQL
+--All Users
+SELECT users.email FROM user
+
+--User with id 12345
+SELECT users.email FROM user WHERE user.id = 12345
+
+--Users that have ids in profile
+SELECT users.email FROM users WHERE users.id IN (SELECT profile.auid FROM profile)
+```
+
 ## JOINS
 + INNER JOIN
 Retrieves records that contain matching values in both tables.
