@@ -15,7 +15,7 @@ SELECT users.email FROM users WHERE users.id IN (SELECT profile.auid FROM profil
 ## JOINS
 + INNER JOIN
 Retrieves records that contain matching values in both tables.
-```
+```SQL
         XXXXXXXXXXX        XXXXXXXXXXX        
      XXX           XXX  XXX           XXX     
    XX                 XXX                XX   
